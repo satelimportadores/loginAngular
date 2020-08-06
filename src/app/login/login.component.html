@@ -1,1 +1,28 @@
-<p>pagina de login</p>
+<div class="container">
+    <div class="row"><hr></div>
+    <div class="row">
+      <div class="col-sm">
+        <!--columna vacia-->
+      </div>
+      <div class="col-sm">
+        <!--Formulario_login-->
+                    <form (submit)='logincheck(user,pass)'>
+                        <div class="form-group">
+                          <label>Nombre de usuario</label>
+                          <input type="text" class="form-control" #user placeholder="Ingrese usuario">
+                          <small id="emailHelp" class="form-text text-muted">Ingrese su nombre de usuario</small>
+                        </div>
+                        <div class="form-group">
+                          <label>Password</label>
+                          <input type="password" class="form-control" #pass placeholder="Ingrese la contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                  </form>
+        <!--Formulario_login-->
+  
+      </div>
+      <div class="col-sm">
+        <!--columna vacia-->
+      </div>
+    </div>
+  </div>
